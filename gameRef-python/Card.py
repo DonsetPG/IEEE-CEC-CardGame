@@ -62,6 +62,61 @@ class Card:
     def Trade(self,cardOpponent,player1,player2):
         self.Attack(cardOpponent,player1,player2)
         self.CounterAttack(cardOpponent)
+	
+    def BuffGreen(self,greenCard):
+        self.attack += greenCard.attack 
+        self.defense += greenCard.defense
+        greenCard.attack = 0
+        greenCard.defense = 0
+        if greenCard.ward:
+            self.ward = True
+            greenCard.ward = False 
+        if greenCard.guard:
+            self.guard = True
+            greenCard.guard = False 
+        if greenCard.lethal:
+            self.lethal = True
+            greenCard.lethal = False 
+        if greenCard.drain:
+            self.drain = True
+            greenCard.drain = False 
+        if greenCard.charge:
+            self.charge = True
+            greenCard.charge = False 
+        if greenCard.breaktrough:
+            self.breaktrough = True
+            greenCard.breaktrough = False 
+
+    def buffRed(self,redCard):
+        
+        redCard.attack = 0
+        redCard.defense = 0
+        if redCard.ward:
+            self.ward = False
+            redCard.ward = False 
+        if redCard.guard:
+            self.guard = False
+            redCard.guard = False 
+        if redCard.lethal:
+            self.lethal = False
+            redCard.lethal = False 
+        if redCard.drain:
+            self.drain = False
+            redCard.drain = False 
+        if redCard.charge:
+            self.charge = False
+            redCard.charge = False 
+        if redCard.breaktrough:
+            self.breaktrough = False
+            redCard.breaktrough = False 
+            
+        self.attack -= redCard.attack 
+        if self.ward and redCard.attack > 0:
+            self.ward = False
+        else:
+            self.defense -= redCard.defense
+        if self.defense < 0:
+            self.alive = False
 
     
                 
