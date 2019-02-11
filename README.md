@@ -54,7 +54,21 @@ Gameplay :
 Le but ici serait de réaliser à faire fonctionner du Reinforcement learning sur un jeu qui : n'est pas à information parfaite (on ne connaît pas les cartes de l'autre), n'est pas vraiment un zéro sum game (on a beau avoir plus de vie que l'autre, les cartes comptent pour beaucoup), n'est pas un environnement déjà travaillé, demande à la fois des stratégies sur le long terme et d'autre beaucoup plus rapide. Bref c'est un sujet complexe mais très intéressant. Réussir à mettre en place du reinforcement learning performent dessus est ultra stylé. 
 On pourrait d'ailleurs en profiter pour aussi recoder un interface du jeu (facile on a le github du jeu), pour pouvoir nous tester nous même contre l'AI.
 
+## Documentation : 
 
+Papiers sur le RL avec des problèmes d'actions space : 
+
+https://arxiv.org/pdf/1809.09095.pdf
+https://arxiv.org/pdf/1809.07193.pdf
+http://dspace.ut.ee/bitstream/handle/10062/61039/ring_roman_bsc_2018.pdf?sequence=1&isAllowed=y
+
+Implémentation R2D2 : 
+
+https://openreview.net/pdf?id=r1lyTjAqYX
+
+Implémentation DQL : 
+
+https://arxiv.org/abs/1312.5602
 
 
 
