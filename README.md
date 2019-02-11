@@ -6,6 +6,8 @@ Lien du jeux en particulier : https://github.com/acatai/Strategy-Card-Game-AI-Co
 
 Lien pour tester le code : https://www.codingame.com/contribute/view/162759566f5a132f64b4de78ed637a2f309a
 
+Lien pour run plusieurs games : https://github.com/fala13/LegendsOfCodeAndMagic_Artifacts
+
 Le lien du jeux offre aussi le referee en java, utile pour les simulations. 
 
 La deadline est le 19 Mai 2019. 
